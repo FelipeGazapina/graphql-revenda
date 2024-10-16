@@ -1,0 +1,43 @@
+{
+  "name": "graphql-revenda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "nodemon",
+    "start": "node dist/index.js",
+    "prisma": "prisma --schema=src/prisma/schema.prisma",
+    "prisma:generate": "prisma generate --schema=src/prisma/schema.prisma",
+    "prisma:migrate": "prisma migrate dev --schema=src/prisma/schema.prisma",
+    "prisma:deploy": "prisma migrate deploy --schema=src/prisma/schema.prisma",
+    "prisma:reset": "prisma migrate reset --schema=src/prisma/schema.prisma",
+    "prisma:status": "prisma migrate status --schema=src/prisma/schema.prisma",
+    "prisma:studio": "prisma studio --schema=src/prisma/schema.prisma"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.5",
+    "@types/validator": "^13.12.2",
+    "nodemon": "^3.1.7",
+    "prisma": "^5.21.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.21.0",
+    "@types/nodemailer": "^6.4.16",
+    "apollo-server": "^3.13.0",
+    "dotenv": "^16.4.5",
+    "graphql": "^16.9.0",
+    "graphql-tools": "^9.0.2",
+    "graphql-tools-types": "^1.3.2",
+    "nodemailer": "^6.9.15",
+    "validator": "^13.12.0"
+  }
+}

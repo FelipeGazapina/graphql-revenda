@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  mailpit:
+    image: axllent/mailpit
+    ports:
+      - "8025:8025" # Mailpit web interface
+      - "1025:1025" # SMTP server
+    restart: always
